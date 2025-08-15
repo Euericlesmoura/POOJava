@@ -3,7 +3,8 @@ public class Main {
 
         //Criando um Objeto -> TIPO NOME = new TIPO();
 
-        Produto prod1 = new Produto();
+
+        Produto prod1 = new Produto("Monitor", 800, "Dell", 20);
 
         prod1.nome = "Monitor";
         prod1.preco = 850.00;
