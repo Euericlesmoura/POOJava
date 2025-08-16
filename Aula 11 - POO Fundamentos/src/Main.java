@@ -5,11 +5,16 @@ public class Main {
 
 
         Produto prod1 = new Produto("Monitor", 800, "Dell", 20);
+                        //Instanciar a classe
 
-        prod1.nome = "Monitor";
-        prod1.preco = 850.00;
-        prod1.marca = "Dell";
-        prod1. mostrarInformacoes();
+        System.out.println(prod1.getNome());
+        prod1.setNome("Teclado");
+
+        //Declarando as informaces manualmente
+//        prod1.nome = "Monitor";
+//        prod1.preco = 850.00;
+//        prod1.marca = "Dell";
+//        prod1. mostrarInformacoes();
 
 
         Carro car1 = new Carro();

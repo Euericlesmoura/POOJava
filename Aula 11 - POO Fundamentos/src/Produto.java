@@ -3,24 +3,24 @@ public class Produto {
 
     //1- Criando um Atributo -> public TIPO NOME;
     //Atributos sao as informacoes/caracteristicas do objeto da classe
-    //Tipos de Atributos ->  public, private, protected
+    //Tipos de Atributos ->  public, private, protected  (ENCAPSULAMENTO)
 
-    public String nome;
-    public  double tamanho;
-    public double preco;
-    public String cor;
-    public int unidade;
-    public String marca;
+    private String nome;
+    private  double tamanho;
+    private double preco;
+    private String cor;
+    private int unidade;
+    private String marca;
 
 
     //GET E SET ->
-    //GET é pegar
+    //GET é pegar, ver a informaçao
     public String getNome() {
         return nome;
     }
 
-    //SET é mudar ou definir
-    public void setNome() {
+    //SET é definir ou mudar a informaçao
+    public void setNome(String nome) {
         this.nome = nome;
     }
 

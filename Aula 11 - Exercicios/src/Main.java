@@ -49,16 +49,32 @@ public class Main {
 
         //Exercicio 4  Gerenciando uma ContaBancaria
 
-        ContaBancaria conta = new ContaBancaria();
+        ContaBancaria conta = new ContaBancaria("Juliana", 2000);
 
-        conta.saldo = 2000;
-        conta.titular = "Ericles";
+
 
         conta.depositar(200);
         conta.sacar(500);
 
         conta.exibirDados();
 
+
+        //Exercicio 5  Controlando o Estoque de um Produto
+
+        Produto produto = new Produto("celular", 2000.00, 10);
+
+        produto.adicionarEstoque(5);
+        System.out.println("Estoque atual: " + produto.getEstoque());
+        produto.realizarVenda(20);
+
+
+        produto.realizarVenda(2);
+        System.out.println("Estoque após venda: " + produto.getEstoque());
+
+
+        produto.setPreco(-50);
+        produto.setPreco(5000);
+        System.out.println("Novo preço: " + produto.getPreco());
 
     }
 }
