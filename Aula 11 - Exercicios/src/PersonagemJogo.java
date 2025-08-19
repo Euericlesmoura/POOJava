@@ -51,7 +51,7 @@ public class PersonagemJogo {
 
     public void subirDeNivel() {
 
-        nivel = nivel++;
+        nivel = nivel + 1;
     }
 
 

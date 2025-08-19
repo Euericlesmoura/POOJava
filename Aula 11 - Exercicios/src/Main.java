@@ -1,3 +1,5 @@
+import java.nio.ShortBuffer;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -75,6 +77,56 @@ public class Main {
         produto.setPreco(-50);
         produto.setPreco(5000);
         System.out.println("Novo preço: " + produto.getPreco());
+
+
+        //Exercicio 6  Criando um PersonagemJogo
+
+        PersonagemJogo heroi = new PersonagemJogo("Aragon", 5, 100);
+
+        heroi.exibirStatus();
+
+        heroi.receberDano(30);
+        heroi.subirDeNivel();
+
+        System.out.println("Após a batalha:");
+        heroi.exibirStatus();
+
+
+
+        //LISTA 4 - EXERCICIO 1  Pessoa e Atleta
+
+        Atleta jogador = new Atleta ("Cristiano Ronaldo" , "Futebol");
+        System.out.println("Nome: " + jogador.getNome()); // Herdado
+        System.out.println("Esporte: " + jogador.getEsporte()); // Próprio
+
+
+
+        //LISTA 4 - EXERCICIO 2  Pessoa e Atleta
+
+        Carro1 carro = new Carro1("Ford", 4);
+        Bicicleta bicicleta = new Bicicleta("Caloi", 10);
+
+        System.out.println("Carro: " + carro.getMarca() + " com " + carro.getNumeroDePortas() + " portas.");
+        System.out.println("Bicicleta: " + bicicleta.getMarca() + " com " + bicicleta.getNumeroDeMarchas() + " marchas.");
+
+
+
+        //LISTA 4 - EXERCICIO 3  Funcionário e Gerente
+
+        Gerente gerente = new Gerente ("Fernanda", 1500.00, "Operaçao PV");
+
+        System.out.println("Nome: " + gerente.getNome());
+        System.out.println("Salário: R$" + gerente.getSalario());
+        System.out.println("Departamento: " + gerente.getDepartamento());
+
+
+
+        //LISTA 4 - EXERCICIO 4  Produto e Livro
+
+
+
+
+
 
     }
 }

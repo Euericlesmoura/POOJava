@@ -26,5 +26,10 @@ public class Main {
         car1.mostrarInformacoes();
 
 
+        Desenvolvedor dev1 = new Desenvolvedor();
+
+        dev1.nome = "Ericles";
+
+
     }
 }
