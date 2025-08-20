@@ -7,7 +7,7 @@ public class Produto {
     //HERANCA ->  reutiliza código, a classe herda os atributos de outra classe
     // public class CLASSE QUE RECEBE extends CLASSE QUE DOA ATRIBUTOS
     //ENCAPSULAMENTO (protected) -> usado em heranca, torna os atributos acessiveis a classe e aos filhos
-    //ABSTRAÇAO
+    //ABSTRAÇAO -> cria interface para criar metodos e separar as classes
 
     private String nome;
     private  double tamanho;
