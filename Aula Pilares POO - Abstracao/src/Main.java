@@ -2,6 +2,8 @@ import exercicio1.Exibivel;
 import exercicio1.Produto;
 import exercicio2.ContaBancaria;
 import exercicio2.OperacoesConta;
+import exercicio3.Concluivel;
+import exercicio3.Tarefa;
 import formas.FormaGeometrica;
 import formas.Quadrado;
 
@@ -24,10 +26,23 @@ public class Main {
 
         //EXERCICIO 2  Conta Bancária
 
-        OperacoesConta conta1 = new ContaBancaria("1234", 10.000);
-        OperacoesConta conta2 = new ContaBancaria("5678", 20.000);
+//        OperacoesConta conta = new ContaBancaria("123", 10000.00);
+//        OperacoesConta conta1 = new ContaBancaria("456", 0);
+//
+//        conta.consultarSaldo();
+//        conta.depositar(5000);
+//        conta.sacar(1000.00);
+//        conta.transferir((ContaBancaria) conta1, 7000.00);
+//        conta1.consultarSaldo();
 
-        conta1.consultarSaldo();
+
+
+        //EXERCICIO 3  Tarefa  **nao terminada**
+
+        Concluivel tarefa = new Tarefa("Relatório", true);
+
+        tarefa.exbirStatus();
+
 
 
 

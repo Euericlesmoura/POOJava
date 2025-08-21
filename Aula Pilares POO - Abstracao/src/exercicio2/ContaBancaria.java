@@ -39,7 +39,9 @@ public class ContaBancaria implements OperacoesConta {
     public void depositar(double valor) {
 
         saldo += valor;
-        System.out.println("Depósito realizado com sucesso !");
+        System.out.println("Operaçao realizado com sucesso !");
+
+        consultarSaldo();
     }
 
     @Override
@@ -52,24 +54,20 @@ public class ContaBancaria implements OperacoesConta {
         else {
             System.out.println("Valor indisponível seu probre ...");
         }
+
+        consultarSaldo();
     }
 
     @Override
     public double consultarSaldo() {
-        System.out.println("O saldo é : " + getSaldo());
+        System.out.println("O saldo é: " + getSaldo());
         return saldo;
     }
 
     @Override
-    public void transferir(double valor, String numeroConta1, double saldoEntrando) {
+    public void transferir(ContaBancaria contaDestino, double valorTransf) {
 
-        if (numeroConta1 == numeroConta) {
-            saldo += saldoEntrando;
-            System.out.println("Transferencia realizada com sucesso !");
-            System.out.println("Novo saldo: " + saldo);
-        }
-        else {
-            System.out.println("Número da conta está incorreto !");
-        }
+        sacar(valorTransf);
+        contaDestino.depositar(valorTransf);
     }
 }
